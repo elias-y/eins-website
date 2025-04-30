@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meine coole Website</title>
+  <title>Login</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hallo Welt 👋</h1>
-  <p>Willkommen auf meiner ersten GitHub-Website!</p>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form onsubmit="handleLogin(event)">
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Passwort:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Einloggen</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

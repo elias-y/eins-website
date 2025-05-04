@@ -2,24 +2,15 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="login.js" defer></script>
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form onsubmit="handleLogin(event)">
-      <label for="email">E-Mail:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="password">Passwort:</label>
-      <input type="password" id="password" name="password" required />
-
-      <button type="submit">Einloggen</button>
-    </form>
-  </div>
-
-  <script src="script.js"></script>
+  <h1>Login</h1>
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="E-Mail" required />
+    <input type="password" id="password" placeholder="Passwort" required />
+    <button type="submit">Los geht's</button>
+  </form>
 </body>
 </html>
